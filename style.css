@@ -1,0 +1,420 @@
+/* ОСНОВНЫЕ НАСТРОЙКИ */
+body {
+    font-size: 20px;
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: #ffffff;
+    color: #222222;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+}
+
+/* ========== КОНТРАСТНЫЙ РЕЖИМ (ТЁМНАЯ ТЕМА) ========== */
+body.dark-mode {
+    background-color: #000000 !important;
+    color: #ffff00 !important;
+}
+
+/* Все блоки с фоном в контрастном режиме */
+body.dark-mode .menu,
+body.dark-mode .lesson-card,
+body.dark-mode .footer,
+body.dark-mode .content,
+body.dark-mode .welcome-block,
+body.dark-mode .video-block,
+body.dark-mode .lesson-text,
+body.dark-mode .remember-block,
+body.dark-mode .test-link,
+body.dark-mode .lesson-item,
+body.dark-mode .about-text,
+body.dark-mode .quote,
+body.dark-mode .lesson-navigation {
+    background-color: #111111 !important;
+    border-color: #ffff00 !important;
+    color: #ffff00 !important;
+}
+
+/* Ссылки в контрастном режиме */
+body.dark-mode a {
+    color: #ffff00 !important;
+}
+
+body.dark-mode a:hover {
+    color: #ff8c00 !important;
+    background-color: transparent !important;
+}
+
+/* Кнопки в контрастном режиме */
+body.dark-mode .big-button,
+body.dark-mode .small-button,
+body.dark-mode .nav-button,
+body.dark-mode .access-btn {
+    background-color: #ffff00 !important;
+    color: #000000 !important;
+}
+
+body.dark-mode .big-button:hover,
+body.dark-mode .small-button:hover,
+body.dark-mode .nav-button:hover,
+body.dark-mode .access-btn:hover {
+    background-color: #ffcc00 !important;
+    color: #000000 !important;
+}
+
+/* Заголовки в контрастном режиме */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #ffff00 !important;
+}
+
+/* Границы и рамки */
+body.dark-mode .menu,
+body.dark-mode .lesson-card,
+body.dark-mode .footer,
+body.dark-mode .remember-block,
+body.dark-mode .test-link,
+body.dark-mode .lesson-item {
+    border: 1px solid #ffff00 !important;
+}
+
+/* Цитата в контрастном режиме */
+body.dark-mode .quote {
+    background-color: #222222 !important;
+    color: #ffff00 !important;
+}
+
+/* МЕНЮ */
+.menu {
+    background-color: #2c3e66;
+    padding: 15px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu a {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ff8c00;
+    color: black;
+}
+
+/* КНОПКИ ДОСТУПНОСТИ */
+.accessibility-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.access-btn {
+    background-color: #ff8c00;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.access-btn:hover {
+    background-color: #e07c00;
+}
+
+/* ОСНОВНОЙ КОНТЕНТ */
+.content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: transparent;
+    padding: 20px;
+}
+
+/* ЗАГОЛОВКИ */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #2c3e66;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #2c3e66;
+    border-left: 5px solid #ff8c00;
+    padding-left: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #2c3e66;
+}
+
+/* БОЛЬШАЯ КНОПКА (НАЧАТЬ) */
+.big-button {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin: 20px 0;
+    transition: background 0.3s;
+}
+
+.big-button:hover {
+    background-color: #e07c00;
+}
+
+/* МАЛЕНЬКИЕ КНОПКИ */
+.small-button {
+    display: inline-block;
+    background-color: #2c3e66;
+    color: white;
+    font-size: 18px;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.small-button:hover {
+    background-color: #ff8c00;
+    color: black;
+}
+
+/* КАРТОЧКИ УРОКОВ НА ГЛАВНОЙ */
+.lessons-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.lesson-card {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.lesson-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ЦИТАТА */
+.quote {
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    color: #2c3e66;
+}
+
+/* ВИДЕО-БЛОК */
+.video-block {
+    text-align: center;
+    margin: 30px 0;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.video-block iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+/* ТЕКСТ УРОКА */
+.lesson-text {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+}
+
+.lesson-text ul, .lesson-text ol {
+    margin: 15px 0;
+    padding-left: 30px;
+}
+
+.lesson-text li {
+    margin: 10px 0;
+}
+
+/* БЛОК "ЗАПОМНИТЕ" */
+.remember-block {
+    background-color: #e8f4f8;
+    border-left: 5px solid #ff8c00;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.remember-block h4 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    color: #2c3e66;
+}
+
+/* КНОПКИ НАВИГАЦИИ ПО УРОКАМ */
+.lesson-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ccc;
+}
+
+.nav-button {
+    background-color: #2c3e66;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.nav-button:hover {
+    background-color: #ff8c00;
+    color: black;
+}
+
+/* ТЕСТЫ (ССЫЛКИ) */
+.test-link {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.test-link a {
+    font-size: 24px;
+    color: #2c3e66;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.test-link a:hover {
+    color: #ff8c00;
+}
+
+/* СПИСОК УРОКОВ */
+.lessons-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.lesson-item {
+    background-color: #f0f0f0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lesson-item span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* О ПРОЕКТЕ */
+.about-text {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 1.8;
+}
+
+/* ПОДВАЛ */
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.footer a {
+    font-size: 18px;
+    color: #2c3e66;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #ff8c00;
+}
+
+/* ПРИВЕТСТВЕННЫЙ БЛОК */
+.welcome-block {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* ДЛЯ ПЛАНШЕТОВ И ТЕЛЕФОНОВ */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .menu {
+        flex-direction: column;
+    }
+    
+    .accessibility-buttons {
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    .big-button {
+        font-size: 20px;
+        padding: 12px 25px;
+    }
+    
+    .video-block iframe {
+        height: 250px;
+    }
+    
+    .lesson-card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
